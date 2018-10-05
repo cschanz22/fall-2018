@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>SelectFriend</ion-title>
+    <ion-title>Select Friend</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -26,6 +26,9 @@
       <ion-avatar item-start>
         <img src="{{friend.picture}}">
       </ion-avatar>
+    <ion-buttons>
+      <button ion-button (click)="goSelectedFriend()"> Pick Me! </button>
+    </ion-buttons>
       <h2>{{friend.name}}</h2>
     </ion-item>
   </ion-list>
